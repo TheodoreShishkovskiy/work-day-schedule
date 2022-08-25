@@ -1,0 +1,89 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    resize: none;
+    color: black;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px black;
+}
+
+.description {
+    white-space: pre-wrap;
+}
+
+.time-block {
+    text-align: center;
+    border-radius: 15px;
+}
+
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid black;
+}
+
+.hour {
+    background-color: white;
+    color: black;
+    border-top: 1px dashed black;
+}
+
+.past {
+    background-color: lightgray;
+    color: white;
+}
+
+.future {
+    background-color: lawngreen;
+    color: white;
+}
+
+.saveBtn {
+    border-left: 1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.svtBtn i:hover {
+    font-size: 21px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Media Query to fit tablets and smaller screens */
+@media screen and (max-width: 768px), screen and (max-width: 575px) {
+    .row {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hour {
+        padding-right: 17%;
+    }
+
+    .saveBtn {
+        border: 0;
+        border-radius: 0.25rem;
+        height: 50px;
+    }
+
+    textarea {
+        min-height: 86px;
+        border: 0;
+    }
+} 
